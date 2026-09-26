@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alya Alfirizky — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar__inner">
+    <a href="#beranda" class="navbar__mark"><span class="dot"></span>alya alfirizky</a>
+    <nav class="navbar__links" id="navList">
+      <a href="#beranda" class="navbar__link" data-nav>Home</a>
+      <a href="#tentang" class="navbar__link" data-nav>About</a>
+      <a href="#skill" class="navbar__link" data-nav>Skills</a>
+      <a href="#proyek" class="navbar__link" data-nav>Projects</a>
+      <a href="#kontak" class="navbar__link" data-nav>Contact</a>
+    </nav>
+    <div class="navbar__cta">
+      <a href="#kontak" class="btn btn--solid btn--sm" style="display:none" id="navCta">Hubungi saya</a>
+      <button class="burger" id="burgerBtn" aria-label="Buka navigasi" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#beranda" data-nav>Home</a>
+    <a href="#tentang" data-nav>About</a>
+    <a href="#skill" data-nav>Skills</a>
+    <a href="#proyek" data-nav>Projects</a>
+    <a href="#kontak" data-nav>Contact</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- BERANDA -->
+  <section id="beranda" class="hero">
+    <div class="grid-texture"></div>
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="hero__kicker">Developer</p>
+          <h1 class="hero__name">Alya Alfirizky</h1>
+          <p class="hero__lede">
+            Saya senang belajar hal baru di dunia web, mulai dari menyusun kode sampai merapikan
+            tampilan agar enak dilihat. Setiap proyek kecil jadi cara saya untuk terus berkembang.
+          </p>
+          <div class="hero__actions">
+            <a href="#proyek" class="btn btn--solid">Lihat proyek</a>
+            <a href="#kontak" class="btn btn--outline">Hubungi saya</a>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <div class="photo-frame tilt-target">
+            <img src="foto-alya.jpeg" alt="Foto Alya Alfirizky" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="placeholder" style="display:flex;"></span>
+          </div>
+          <div class="photo-tag">
+            <strong>Alya Alfirizky</strong>
+            Web Developer
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Kenalan lebih dekat</p>
+        <h2>Tentang saya</h2>
+      </div>
+      <div class="about-intro">
+        <div class="about-intro__photo reveal">
+          <div class="about-intro__frame tilt-target">
+            <img src="foto gueh.jpeg" alt="Foto Alya Alfirizky" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="placeholder" style="display:flex;"></span>
+          </div>
+          <span class="about-intro__ring"></span>
+          <span class="about-intro__dot about-intro__dot--1"></span>
+          <span class="about-intro__dot about-intro__dot--2"></span>
+        </div>
+
+        <div class="about-intro__text">
+          <p class="about-intro__hi reveal">Hai, perkenalkan</p>
+          <h3 class="about-intro__name reveal">Saya Alya Alfirizky</h3>
+          <p class="about-intro__desc reveal">
+          Halo, saya Alya Alfirizky. Saya tertarik dengan dunia teknologi, khususnya pemrograman dan pembuatan website.
+          Saat ini saya masih terus belajar dan mencoba berbagai projek untuk menambah pengalaman serta mengembangkan kemampuan saya.
+          Saya senang ketika bisa melihat hasil dari sesuatu yang saya buat sendiri dan terus mencoba memperbaikinya dari waktu ke waktu.
+
+          </p>
+          <div class="about-intro__tags reveal">
+            <span>Web Development</span>
+            <span>Laravel & PHP</span>
+            <span>Desain Visual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL -->
+  <section id="skill" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Kemampuan</p>
+        <h2>Skill</h2>
+        <p>Bukan daftar lengkap — hanya beberapa yang paling sering saya pakai sehari-hari.</p>
+      </div>
+      <div class="skill-list" id="skillList">
+        <div class="skill-row" data-pct="90">
+          <div class="skill-row__top"><span class="skill-row__name">HTML</span><span class="skill-row__pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-pct="85">
+          <div class="skill-row__top"><span class="skill-row__name">CSS</span><span class="skill-row__pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-pct="75">
+          <div class="skill-row__top"><span class="skill-row__name">PHP</span><span class="skill-row__pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-pct="70">
+          <div class="skill-row__top"><span class="skill-row__name">Laravel</span><span class="skill-row__pct">70%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-pct="75">
+          <div class="skill-row__top"><span class="skill-row__name">Canva</span><span class="skill-row__pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-pct="75">
+          <div class="skill-row__top"><span class="skill-row__name">CapCut</span><span class="skill-row__pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section id="proyek">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Hasil belajar</p>
+        <h2>Proyek</h2>
+        <p>Beberapa project yang pernah saya kerjakan.</p>
+      </div>
+      <div class="project-grid">
+
+        <article class="project-card project-card--lead reveal">
+          <div class="project-card__image-wrap">
+            <img src="buku_tamu_digital.jpeg" alt="Tampilan Buku Tamu Digital" class="project-card__image">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Buku Tamu Digital</h3>
+            <p class="project-card__desc">
+              Aplikasi pencatatan tamu berbasis web dengan fitur pencarian dan manajemen data lengkap.
+            </p>
+            <div class="project-card__stack"><span>Laravel</span><span>MySQL</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image-wrap">
+            <img src="inventory.jpeg" alt="Tampilan Aplikasi Inventory Kantor" class="project-card__image">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Aplikasi Inventory</h3>
+            <p class="project-card__desc">
+              Aplikasi pencatatan barang kantor dengan kategori, stok, serta fitur tambah, edit, dan hapus data.
+            </p>
+            <div class="project-card__stack"><span>Laravel</span><span>MySQL</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image-wrap">
+            <img src="landing_page.jpeg" alt="Tampilan landing page TravelGo" class="project-card__image">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">TravelGo</h3>
+            <p class="project-card__desc">
+              Landing page platform travel: destinasi unggulan, benefit, dan review dalam tampilan menarik.
+            </p>
+            <div class="project-card__stack"><span>HTML</span><span>CSS</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Terbuka untuk ngobrol</p>
+        <h2>Kontak</h2>
+        <p>Punya proyek, ide, atau sekadar mau say hi? Silakan hubungi saya lewat salah satu cara di bawah.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-list">
+            <a href="mailto:alya.alfirizky@email.com"><span>Email</span><span>alyaalfirizky@email.com</span></a>
+            <a href="#" target="_blank" rel="noopener"><span>GitHub</span><span>alyayaya09</span></a>
+            <a href="#" target="_blank" rel="noopener"><span>Instagram</span><span>@alyaalvsa_</span></a>
+          </div>
+        </div>
+        <form class="form" id="contactForm">
+          <div class="field"><label for="nama">Nama</label><input type="text" id="nama" name="nama" placeholder="nama kamu" required></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="email kamu" required></div>
+          <div class="field"><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan kamu disini" required></textarea></div>
+          <button type="submit" class="btn btn--solid" style="align-self:flex-start;">Kirim pesan</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>&copy; <span id="year"></span> Alya Alfirizky. Dibuat dengan sepenuh hati.</span>
+    <span>Terima kasih sudah mampir!</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
